@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stylepuzzle.www"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="com.bartrendr.bartrendr.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.stylepuzzle.www.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.stylepuzzle.www.permission.C2D_MESSAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:name="com.stylepuzzle.www.AppController"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name="com.stylepuzzle.gcm.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.stylepuzzle.www" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.stylepuzzle.gcm.GcmIntentService" />
+
+        <activity
+            android:name="com.stylepuzzle.gcm.DemoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FashionistaProfile"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".WhatUserLookingFor"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Booking"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Checkout"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".AddAddress"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Addresses"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.braintree.example.ui.BraintreeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.braintree.example.ui.PreferencesActivity"
+            android:label="@string/settings_title" >
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/settings_title" >
+        </activity>
+        <activity
+            android:name=".FullImageActivity"
+            android:label="@string/settings_title" >
+        </activity>
+        <activity
+            android:name="com.stylepuzzle.fashionista.FashionistaTabPage"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.stylepuzzle.fashionista.CollectionDemoActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.stylepuzzle.fashionista.CommentThreadActivity"
+            android:label="@string/app_name" />
+    </application>
+
+</manifest>

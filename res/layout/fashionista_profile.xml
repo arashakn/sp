@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!--
+             <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/ivMainImageComment"
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:id="@+id/rlCommentAndUserInoBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivMainImageComment"
+                android:background="@color/btGrey"
+                android:padding="10dip" >
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/ivUserImage"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerCrop"
+                    android:src="@null" />
+
+                <TextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@+id/ivUserImage"
+                    android:textColor="@color/btBlack" />
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvUserName"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@+id/ivUserImage"
+                    android:textColor="@color/btBlack"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvMainHobnobComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/ivUserImage"
+                    android:layout_marginTop="10dip"
+                    android:singleLine="false"
+                    android:textColor="@color/btBlack" />
+            </RelativeLayout>
+        </RelativeLayout>
+        -->
+
+        <ListView
+            android:id="@+id/lv_fasionistaImages"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:dividerHeight="0dp">
+        </ListView>
+
+    </LinearLayout>
+
+</ScrollView>

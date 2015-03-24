@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dip" >
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dip"
+            android:text="Address"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvWelcome"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dip"
+            android:textSize="14sp" />
+
+        <!--
+             <Button
+            android:id="@+id/btnChooseImage"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_below="@+id/tvWelcome"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dip"
+            android:background="@drawable/signup_addphoto" />
+        -->
+
+        <LinearLayout
+            android:id="@+id/llFields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvComplete"
+            android:layout_marginTop="5dip"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/etRName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/edittext_top_bg"
+                android:hint="Recipient name"
+                android:padding="10dip"
+                android:singleLine="true" />
+            <!-- Password Label -->
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/etStreet"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etEmail"
+                android:background="@android:color/white"
+                android:hint="Street"
+                android:padding="10dip"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/etCity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:hint="City"
+                android:padding="10dip"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/etState"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:hint="State"
+                android:padding="10dip"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/etZipCode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:hint="Zip code"
+                android:inputType="phone"
+                android:padding="10dip"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bottom_bg"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:padding="10dip"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llFields"
+            android:background="@android:color/white"
+            android:text="Save"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" 
+            android:layout_marginTop="20dip"
+            />
+
+        <TextView
+            android:id="@+id/tvPrivacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llFields"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:lineSpacingExtra="2dip"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

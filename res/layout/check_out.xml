@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <RelativeLayout
+        android:id="@+id/rlAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dip" >
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dip"
+            android:text="Address"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvAddressValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/llFields"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:lineSpacingExtra="2dip"
+            android:text="Value"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <RelativeLayout
+        android:id="@+id/rlPayWith"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dip" >
+
+        <TextView
+            android:id="@+id/tvPayWith"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dip"
+            android:text="Pay With"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvAddCreditCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/llFields"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:lineSpacingExtra="2dip"
+            android:text="Add Credit Card"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <RelativeLayout
+        android:id="@+id/rlSubtotal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dip" >
+
+        <TextView
+            android:id="@+id/tvSubtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dip"
+            android:text="Subtotal"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvSubtotalValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:lineSpacingExtra="2dip"
+            android:text="$0"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <RelativeLayout
+        android:id="@+id/rlServiceFee"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dip" >
+
+        <TextView
+            android:id="@+id/tvServiceFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dip"
+            android:text="Service Fee"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvServiceFeeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:lineSpacingExtra="2dip"
+            android:text="$0"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <RelativeLayout
+        android:id="@+id/rlShipping"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dip" >
+
+        <TextView
+            android:id="@+id/tvShipping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dip"
+            android:text="Shipping"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvShippingValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:lineSpacingExtra="2dip"
+            android:text="$0"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+    
+    
+    
+    <RelativeLayout
+        android:id="@+id/rlTotal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dip" >
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dip"
+            android:text="total"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvTotalValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:lineSpacingExtra="2dip"
+            android:text="-"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">StylePuzzle</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="credit_card_label">Credit Card Number:</string>
+    <string name="expiration_date_label">Expiration Date:</string>
+    <string name="cvv_label">CVV:</string>
+    <string name="form_submit_label">Submit</string>
+    <string name="settings_label">Settings</string>
+    <string name="settings_title">Braintree Payments Settings</string>
+    <string name="merchant_server_title">Merchant Server URL</string>
+    <string name="merchant_server_summary">Enter your merchant server URL</string>
+    <string name="dummy_section_text">Section %1d is just a dummy section.</string>
+    <string name="demo_external_activity">Demo External Activity</string>
+    <string name="demo_collection">Demo Collection</string>
+
+    <string-array name="planets_array">
+        <item>50$</item>
+        <item>60$</item>
+        <item>70$</item>
+        <item>80$</item>
+        <item>90$</item>
+        <item>100$</item>
+        <item>110$</item>
+        <item>120$</item>
+        <item>130$</item>
+        <item>140$</item>
+    </string-array>
+    <string-array name="string_array_take_picture">
+        <item>Choose Existing</item>
+        <item>Take Photo</item>
+        <item>Remove Photo</item>
+    </string-array>
+
+</resources>

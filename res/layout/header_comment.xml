@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<!--    <RelativeLayout
+        android:id="@+id/RLVibesArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dip"
+        android:visibility="gone" >
+
+        <FrameLayout
+            android:id="@+id/llVibesUpPart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip" >
+
+            <LinearLayout
+                android:id="@+id/llVibesUpPartFor5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/ivVibeUp1"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:scaleType="centerCrop" />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/ivVibeUp2"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:scaleType="centerCrop" />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/ivVibeUp3"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:scaleType="centerCrop" />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/ivVibeUp4"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:scaleType="centerCrop" />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/ivVibeUp5"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llVibesUpPartFor4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" 
+                >
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/ivVibeUp1ForTwo"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:scaleType="centerCrop" />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/ivVibeUp2ForTwo"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:scaleType="centerCrop" />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/ivVibeUp3ForTwo"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:scaleType="centerCrop" />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/ivVibeUp4ForTwo"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/ivMainImageComment"
+        android:layout_width="match_parent"
+        android:layout_height="250dip"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:id="@+id/rlCommentAndUserInoBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivMainImageComment"
+        android:padding="10dip" >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/ivUserImage"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_nophoto" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" /> -->
+ 
+    <Button
+        android:id="@+id/btnLoadMoreComments"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMainHobnobComment"
+        android:text="Load Earlier Comments"
+        android:textSize="10sp"
+ />
+
+    <!--
+         <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+    -->
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" 
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dip" 
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dip"
+            android:text="WHERE DO YOU WANT YOUR ITEMS DELIVERED?"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" 
+            android:layout_marginBottom="20dip"
+            />
+
+        <TextView
+            android:id="@+id/tvComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvWelcome"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dip"
+            android:textSize="14sp"
+            android:visibility="gone"
+             />
+
+        <ListView
+            android:id="@+id/lv_Addresses"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:visibility="gone"
+            >
+        </ListView>
+
+        <Button
+            android:id="@+id/btnAddAddress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="Add Address"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" 
+            android:layout_marginTop="20dip"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

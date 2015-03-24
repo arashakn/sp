@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/menu_next_page"
+        android:icon="@drawable/chevron_right"
+        android:showAsAction="always"
+        android:title="1"
+        />
+
+</menu>

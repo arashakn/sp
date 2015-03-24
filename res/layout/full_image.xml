@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+   
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/ivFullImage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@android:color/black"
+            android:gravity="center"
+            android:text="sample test"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnCancelFullImage"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_gravity="top|right" 
+            android:background="@drawable/cancel_button"
+            android:layout_margin="20dip"
+            />
+    </FrameLayout>
+
+</RelativeLayout>
